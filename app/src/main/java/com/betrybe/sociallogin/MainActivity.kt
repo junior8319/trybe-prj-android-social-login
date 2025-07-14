@@ -9,10 +9,10 @@ import com.google.android.material.textfield.TextInputEditText
 
 class MainActivity : AppCompatActivity() {
     private val inputEmail: TextInputEditText by lazy {
-        findViewById(R.id.email_text_input_layout)
+        findViewById(R.id.email_text_input)
     }
     private val inputPassword: TextInputEditText by lazy {
-        findViewById(R.id.password_text_input_layout)
+        findViewById(R.id.input_password_text)
     }
     private val btnLogin: MaterialButton by lazy { findViewById(R.id.login_button) }
 
