@@ -1,12 +1,19 @@
 package com.betrybe.sociallogin
 
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.textfield.TextInputEditText
 
 class MainActivity : AppCompatActivity() {
-    private val inputEmail: TextInputEditText by lazy { findViewById(R.id.email_text_input_layout) }
+    private val inputEmail: TextInputEditText by lazy {
+        findViewById(R.id.email_text_input_layout)
+    }
+    private val inputPassword: TextInputEditText by lazy {
+        findViewById(R.id.password_text_input_layout)
+    }
     private val btnLogin: MaterialButton by lazy { findViewById(R.id.login_button) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,6 +31,15 @@ class MainActivity : AppCompatActivity() {
                 inputEmail.error = null
             }
         }
+
+        val inputsWatcher = object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) { }
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) { }
+            override fun afterTextChanged(s: Editable?) = checkFields()
+        }
+
+        inputEmail.addTextChangedListener(inputsWatcher)
+        inputPassword.addTextChangedListener(inputsWatcher)
     }
 
     private fun validateEmail(typedEmail: String): Boolean {
@@ -36,5 +52,12 @@ class MainActivity : AppCompatActivity() {
         )
 
         return emailPattern.matches(typedEmail)
+    }
+
+    private fun checkFields() {
+        val isFilledEmail = inputEmail.text.toString().trim().isNotEmpty()
+        val isFilledPassword = inputPassword.text.toString().trim().isNotEmpty()
+
+        btnLogin.isEnabled = isFilledEmail && isFilledPassword
     }
 }
