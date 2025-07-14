@@ -65,13 +65,14 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/login_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
             android:enabled="false"
-            android:text="@string/login" />
+            android:text="@string/login"
+            style="@style/Widget.Material3.Button" />
 
         <TextView
             android:id="@+id/forgot_password_button"
@@ -81,4 +82,20 @@
             android:text="@string/forgot_password"
             style="@style/ForgotPasswordStyle" />
     </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sign_up_button"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:enabled="true"
+        android:text="@string/signup"
+        android:textColor="@color/buttons_text_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_container" />
 </androidx.constraintlayout.widget.ConstraintLayout>
