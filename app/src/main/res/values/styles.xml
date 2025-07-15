@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
+        <item name="textInputStyle">
+            @style/Widget.MaterialComponents.TextInputLayout.OutlinedBox
+        </item>
+        <item name="colorError">@color/warning_text_color</item>
+    </style>
     <style name="ForgotPasswordStyle">
         <item name="android:textColor">@color/buttons_text_color</item>
         <item name="android:textSize">16sp</item>
@@ -14,5 +20,12 @@
         <item name="android:textStyle">bold</item>
         <item name="android:fontFamily">@font/roboto</item>
         <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="EmailWarning">
+        <item name="android:textColor">@color/warning_text_color</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/roboto</item>
     </style>
 </resources>
