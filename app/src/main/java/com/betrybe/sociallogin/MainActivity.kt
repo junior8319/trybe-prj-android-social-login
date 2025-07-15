@@ -23,8 +23,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        emailWarningText.visibility = View.GONE
-
         btnLogin.setOnClickListener {
             val typedEmail = inputEmail.text.toString().trim()
 
