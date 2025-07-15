@@ -57,16 +57,6 @@
                 android:textColorHint="@color/graphite"
                 tools:text="@string/email" />
 
-            <TextView
-                android:id="@+id/text_invalid_email"
-                style="@style/EmailWarning"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="12dp"
-                android:layout_weight="1"
-                android:text="@string/email_warning"
-                android:visibility="gone" />
-
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout

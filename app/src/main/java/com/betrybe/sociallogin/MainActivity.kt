@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.textfield.TextInputEditText
+import com.google.android.material.textfield.TextInputLayout
 
 class MainActivity : AppCompatActivity() {
     private val inputEmail: TextInputEditText by lazy {
@@ -17,7 +18,9 @@ class MainActivity : AppCompatActivity() {
         findViewById(R.id.input_password_text)
     }
     private val btnLogin: MaterialButton by lazy { findViewById(R.id.login_button) }
-    private val emailWarningText: TextView by lazy { findViewById(R.id.text_invalid_email) }
+    private val inputEmailLayout: TextInputLayout by lazy {
+        findViewById(R.id.email_text_input_layout)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,14 +29,10 @@ class MainActivity : AppCompatActivity() {
         btnLogin.setOnClickListener {
             val typedEmail = inputEmail.text.toString().trim()
 
-            if (typedEmail.isEmpty()) {
-                inputEmail.error = "Email é obrigatório"
-                emailWarningText.visibility = View.VISIBLE
-            } else if (!validateEmail(typedEmail)) {
-                emailWarningText.visibility = View.VISIBLE
+            if (!validateEmail(typedEmail)) {
+                inputEmailLayout.error = getString(R.string.email_warning)
             } else {
                 inputEmail.error = null
-                emailWarningText.visibility = View.GONE
             }
         }
 
@@ -42,7 +41,6 @@ class MainActivity : AppCompatActivity() {
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) { }
             override fun afterTextChanged(s: Editable?) {
                 checkFields()
-                emailWarningText.visibility = View.GONE
             }
         }
 
