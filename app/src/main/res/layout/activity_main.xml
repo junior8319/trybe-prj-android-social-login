@@ -5,6 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FBF5F5"
+    android:backgroundTint="#FBF5F5"
     android:clickable="true"
     android:focusable="true"
     tools:context=".MainActivity">
@@ -31,11 +33,18 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/email_text_input_layout"
-            style="?attr/textInputFilledStyle"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
             android:hint="@string/email"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="filled"
+            app:errorEnabled="true"
+            app:errorIconDrawable="@drawable/email_icon_24dp"
+            app:errorIconTint="@color/warning_text_color"
+            app:errorTextColor="@color/warning_text_color"
+            app:hintTextColor="@color/graphite"
             app:startIconDrawable="@drawable/email_icon_24dp">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -44,7 +53,18 @@
                 android:layout_height="wrap_content"
                 android:enabled="true"
                 android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textColorHint="@color/graphite"
                 tools:text="@string/email" />
+
+            <TextView
+                android:id="@+id/text_invalid_email"
+                style="@style/EmailWarning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_weight="1"
+                android:text="@string/email_warning" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -71,20 +91,20 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/login_button"
+            style="@style/Widget.Material3.Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
             android:enabled="false"
-            android:text="@string/login"
-            style="@style/Widget.Material3.Button" />
+            android:text="@string/login" />
 
         <TextView
             android:id="@+id/forgot_password_button"
+            style="@style/ForgotPasswordStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:enabled="true"
-            android:text="@string/forgot_password"
-            style="@style/ForgotPasswordStyle" />
+            android:text="@string/forgot_password" />
     </LinearLayout>
 
     <com.google.android.material.button.MaterialButton
