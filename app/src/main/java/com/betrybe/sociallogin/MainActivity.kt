@@ -5,6 +5,7 @@ import android.text.Editable
 import android.text.TextWatcher
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.button.MaterialButton
+import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 
@@ -31,15 +32,19 @@ class MainActivity : AppCompatActivity() {
 
             if (!validateEmail(typedEmail)) {
                 inputEmailLayout.error = getString(R.string.email_warning)
+                return@setOnClickListener
             } else {
                 inputEmailLayout.error = null
             }
 
             if (!validatePassword(typedPassword)) {
                 passwordInputLayout.error = getString(R.string.password_warning)
+                return@setOnClickListener
             } else {
                 passwordInputLayout.error = null
             }
+
+            showLoginSuccessSnackBar(getString(R.string.login_succeeded))
         }
 
         val inputsWatcher = object : TextWatcher {
@@ -73,5 +78,9 @@ class MainActivity : AppCompatActivity() {
         val isFilledPassword = inputPassword.text.toString().trim().isNotEmpty()
 
         btnLogin.isEnabled = isFilledEmail && isFilledPassword
+    }
+
+    private fun showLoginSuccessSnackBar(message: String) {
+        Snackbar.make(findViewById(R.id.main), message, Snackbar.LENGTH_SHORT).show()
     }
 }
