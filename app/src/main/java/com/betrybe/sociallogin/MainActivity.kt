@@ -3,8 +3,6 @@ package com.betrybe.sociallogin
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
-import android.view.View
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.textfield.TextInputEditText
@@ -32,7 +30,7 @@ class MainActivity : AppCompatActivity() {
             if (!validateEmail(typedEmail)) {
                 inputEmailLayout.error = getString(R.string.email_warning)
             } else {
-                inputEmail.error = null
+                inputEmailLayout.error = null
             }
         }
 
