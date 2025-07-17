@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         btnLogin.setOnClickListener {
             val typedEmail = inputEmail.text.toString().trim()
             val typedPassword = inputPassword.text.toString()
+            hideKeyboard()
 
             if (!validateEmail(typedEmail)) {
                 inputEmailLayout.error = getString(R.string.email_warning)
@@ -52,6 +53,8 @@ class MainActivity : AppCompatActivity() {
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) { }
             override fun afterTextChanged(s: Editable?) {
                 checkFields()
+                passwordInputLayout.error = null
+                inputEmailLayout.error = null
             }
         }
 

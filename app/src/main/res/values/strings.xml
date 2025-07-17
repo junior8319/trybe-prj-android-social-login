@@ -8,4 +8,8 @@
     <string name="email_warning">Email inválido</string>
     <string name="login_succeeded">Login efetuado com sucesso</string>
     <string name="email">Email</string>
+    <string name="logo_description">
+        Logotipo do aplicativo, que consiste nas palavra trybe na cor preta e três triângulos verdes
+        dispostos para formar um círculo entre si apontando todos para o centro.
+    </string>
 </resources>

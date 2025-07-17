@@ -5,4 +5,5 @@
     <color name="graphite">#545454</color>
     <color name="buttons_text_color">#006D3E</color>
     <color name="warning_text_color">#ba1a1a</color>
+    <color name="pink_gray">#DECCFF</color>
 </resources>
