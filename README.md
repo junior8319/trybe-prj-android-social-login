@@ -1,8 +1,8 @@
-📱 <h1>Android Social Login</h1>
+<h1>📱 Android Social Login</h1>
 <p align="center"> <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android" /> <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin" /><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /> </p>
 <br>Um projeto Android desenvolvido durante o curso de Aceleração Android da Trybe, demonstrando a implementação de uma tela de login de um aplicativo.
 
-<br><h2>🔍 Visão Geral</h2>
+<h2>🔍 Visão Geral</h2>
 <br>Este projeto tem como objetivo:
 <br>✅ A partir de um protótipo desenvolvido com Figma, desenvolver uma tela de login de um aplicativo Android.
 <br>✅ Validar que os campos "email" e "senha" tenham algum preenchimento para habilitar o botão "entrar"
@@ -11,7 +11,7 @@
 <br>✅ Mostrar aviso em caso dados inválidos em cada campo.
 <br>✅ Mostrar mensagem de sucesso em caso de preenchimento com dados válidos.
 <br>
-<br>🛠️ Tecnologias e Bibliotecas
+<h2>🛠️ Tecnologias e Bibliotecas</h2>
 <br>Linguagem: Kotlin
 <br>
 <br>SDK: Android (minSdk 21+)
@@ -22,7 +22,7 @@
 <br>
 <br>Ferramentas: Android Studio
 <br>
-<br>⚙️ Configuração
+<br><h2>⚙️ Configuração</h2>
 <br>Pré-requisitos
 <br>Android Studio (versão mais recente recomendada)
 <br>
@@ -35,9 +35,34 @@
 <br>
 <br>Execute o app em um emulador ou dispositivo físico
 <br>
-<br>📸 Screenshots
+<br><h2>📸 Screenshots</h2>
 <br>Tela Inicial
-<p align="center"><img src="./running-images/starting-page.jpeg" /></p>
+<p align="center"><img src="./running-images/starting-page.jpeg" alt="Tela inicial."/></p><br>
+Em preenchimento, botão desabilitado
+<p align="center"><img src="./running-images/login-button-disabled.jpeg" alt="Em preenchimento, botão desabilitado"></p>
+<p>
+    Demonstrando que o botão "Entrar" fica desabilitado até que os campos "Email" e "Senha" tenham algum preenchimento
+</p><br>
+Em preenchimento, botão habilitado
+<p align="center"><img src="./running-images/filled-login-button-enabled.jpeg" alt="Em preenchimento, botão habilitado"></p>
+<p>
+    Demonstrando que o botão "Entrar" fica habilitado quando há preenchimento dos campos "Email" e "Senha".
+</p><br>
+Validação, aviso de email inválido
+<p align="center"><img src="./running-images/invalid-email.jpeg" alt="Aviso de email inválido"></p>
+<p>
+    Demonstrando que o campo "email" fica com um aviso em vermelho caso esteja em formato inválido.
+</p><br>
+Validação, aviso de senha inválida
+<p align="center"><img src="./running-images/invalid-password.jpeg" alt="Aviso de senha inválida"></p>
+<p>
+    Demonstrando que o campo "senha" fica com um aviso em vermelho caso não tenha ao menos 5 caracteres.
+</p><br>
+Mensagem de sucesso
+<p align="center"><img src="./running-images/login-success.jpeg" alt="Mensagem de sucesso"></p>
+<p>
+    Quando o preenchimento é feito corretamente, uma mensagem de sucesso é exibida ao clicar no botão "Entrar".
+</p>
 <br>
 <br>
 <br>📌 Notas Adicionais
