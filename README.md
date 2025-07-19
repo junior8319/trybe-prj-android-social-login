@@ -37,29 +37,29 @@
 <br>
 <br><h2>📸 Imagens</h2>
 <h3>Tela Inicial</h3>
-<p align="center"><img src="./running-images/starting-page.jpeg" alt="Tela inicial."/></p><br>
+<p align="center"><img width="360px" src="./running-images/starting-page.jpeg" alt="Tela inicial."/></p><br>
 <h3>Em preenchimento, botão desabilitado</h3>
-<p align="center"><img src="./running-images/login-button-disabled.jpeg" alt="Em preenchimento, botão desabilitado"></p>
+<p align="center"><img width="360px" src="./running-images/login-button-disabled.jpeg" alt="Em preenchimento, botão desabilitado"></p>
 <p>
     Demonstrando que o botão "Entrar" fica desabilitado até que os campos "Email" e "Senha" tenham algum preenchimento
 </p><br>
 <h3>Em preenchimento, botão habilitado</h3>
-<p align="center"><img src="./running-images/filled-login-button-enabled.jpeg" alt="Em preenchimento, botão habilitado"></p>
+<p align="center"><img width="360px" src="./running-images/filled-login-button-enabled.jpeg" alt="Em preenchimento, botão habilitado"></p>
 <p>
     Demonstrando que o botão "Entrar" fica habilitado quando há preenchimento dos campos "Email" e "Senha".
 </p><br>
 <h3>Validação, aviso de email inválido</h3>
-<p align="center"><img src="./running-images/invalid-email.jpeg" alt="Aviso de email inválido"></p>
+<p align="center"><img width="360px" src="./running-images/invalid-email.jpeg" alt="Aviso de email inválido"></p>
 <p>
     Demonstrando que o campo "email" fica com um aviso em vermelho caso esteja em formato inválido.
 </p><br>
 <h3>Validação, aviso de senha inválida</h3>
-<p align="center"><img src="./running-images/invalid-password.jpeg" alt="Aviso de senha inválida"></p>
+<p align="center"><img width="360px" src="./running-images/invalid-password.jpeg" alt="Aviso de senha inválida"></p>
 <p>
     Demonstrando que o campo "senha" fica com um aviso em vermelho caso não tenha ao menos 5 caracteres.
 </p><br>
 <h3>Mensagem de sucesso</h3>
-<p align="center"><img src="./running-images/login-success.jpeg" alt="Mensagem de sucesso"></p>
+<p align="center"><img width="360px" src="./running-images/login-success.jpeg" alt="Mensagem de sucesso"></p>
 <p>
     Quando o preenchimento é feito corretamente, uma mensagem de sucesso é exibida ao clicar no botão "Entrar".
 </p>
