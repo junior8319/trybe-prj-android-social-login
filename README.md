@@ -35,7 +35,7 @@
 <br>
 <br>Execute o app em um emulador ou dispositivo físico
 <br>
-<br><h2>📸 Screenshots</h2>
+<br><h2>📸 Imagens</h2>
 <br>Tela Inicial
 <p align="center"><img src="./running-images/starting-page.jpeg" alt="Tela inicial."/></p><br>
 Em preenchimento, botão desabilitado
