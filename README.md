@@ -36,7 +36,8 @@
 <br>Execute o app em um emulador ou dispositivo físico
 <br>
 <br>📸 Screenshots
-<br>A produzir
+<br>Tela Inicial
+<p align="center"><img src="./running-images/starting-page.jpeg" /></p>
 <br>
 <br>📌 Notas Adicionais
 <br>
