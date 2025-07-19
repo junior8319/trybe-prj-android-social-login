@@ -1,8 +1,8 @@
-📱 Android Social Login
+📱 <h1>Android Social Login</h1>
 <p align="center"> <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android" /> <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin" /><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /> </p>
 <br>Um projeto Android desenvolvido durante o curso de Aceleração Android da Trybe, demonstrando a implementação de uma tela de login de um aplicativo.
 
-<br>🔍 Visão Geral
+<br><h2>🔍 Visão Geral</h2>
 <br>Este projeto tem como objetivo:
 <br>✅ A partir de um protótipo desenvolvido com Figma, desenvolver uma tela de login de um aplicativo Android.
 <br>✅ Validar que os campos "email" e "senha" tenham algum preenchimento para habilitar o botão "entrar"
@@ -38,6 +38,7 @@
 <br>📸 Screenshots
 <br>Tela Inicial
 <p align="center"><img src="./running-images/starting-page.jpeg" /></p>
+<br>
 <br>
 <br>📌 Notas Adicionais
 <br>
