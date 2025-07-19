@@ -63,6 +63,7 @@
 <p>
     Quando o preenchimento é feito corretamente, uma mensagem de sucesso é exibida ao clicar no botão "Entrar".
 </p>
+<p>Observação: Estas imagens foram obtidas a partir da execução do aplicativo em um celular Motorola Moto G84 pareado ao Android Studio via wi-fi</p>
 <br>
 <br>
 <br>📌 Notas Adicionais
